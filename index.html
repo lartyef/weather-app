@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Country Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container overflow__x">
+        <h1>Weather and Country Information</h1>
+        <form id="userForm">
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <input type="text" id="location" placeholder="Enter your location" required>
+            <button id="submit" type="submit">Get Information</button>
+        </form>
+
+        <div id="resultContainer" class="hidden overflow__x">
+            <table id="infoTable" class="overflow__x">
+                <tr>
+                    <th>Weather</th>
+                    <th>Temperature (K)</th>
+                    <th>Country</th>
+                    <th>Capital</th>
+                    <th>Username</th>
+                </tr>
+                <tr>
+                    <td id="weatherDescription"></td>
+                    <td id="temperature"></td>
+                    <td id="countryName"></td>
+                    <td id="capital"></td>
+                    <td id="username"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

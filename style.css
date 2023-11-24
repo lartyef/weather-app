@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    margin: 8px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#name,
+#location {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#resultContainer {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+#infoTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#infoTable th,
+#infoTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#infoTable th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 600px) {
+
+    #infoTable {
+        overflow-x: auto;
+    }
+
+    #name,
+    #location {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    .overflow__x {
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+
+    .overflow__x ::-webkit-scrollbar {
+        display: none;
+    }
+
+}
